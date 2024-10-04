@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FF9800"
+    tools:context=".Payment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="360dp"
+        android:layout_height="667dp"
+        android:layout_marginBottom="52dp"
+        android:background="#E3D989"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/textView31"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="88dp"
+            android:text="Add card details"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.062"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView30"
+            android:layout_width="169dp"
+            android:layout_height="73dp"
+            android:layout_marginStart="65dp"
+            android:layout_marginEnd="172dp"
+            android:layout_marginBottom="576dp"
+            android:text="Payment"
+            android:textColor="#FF9800"
+            android:textSize="38sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageView15"
+            app:layout_constraintTop_toBottomOf="@+id/cardView" />
+
+        <EditText
+            android:id="@+id/editTextText5"
+            android:layout_width="326dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="54dp"
+            android:layout_marginEnd="21dp"
+            android:background="#DAD0D0"
+            android:ems="10"
+            android:hint="  Card Holder;s Name :"
+            android:inputType="text"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView31" />
+
+        <EditText
+            android:id="@+id/editTextText6"
+            android:layout_width="326dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="21dp"
+            android:background="#DAD0D0"
+            android:ems="10"
+            android:hint="@string/card_no1"
+            android:inputType="text"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextText5" />
+
+        <EditText
+            android:id="@+id/editTextText7"
+            android:layout_width="184dp"
+            android:layout_height="59dp"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="17dp"
+            android:layout_marginEnd="31dp"
+            android:background="#DAD0D0"
+            android:ems="10"
+            android:hint="@string/Month_date"
+            android:inputType="text"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/editTextText8"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextText6" />
+
+        <EditText
+            android:id="@+id/editTextText8"
+            android:layout_width="110dp"
+            android:layout_height="61dp"
+            android:layout_marginBottom="284dp"
+            android:background="#DAD0D0"
+            android:ems="10"
+            android:hint="@string/card_code"
+            android:inputType="text"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.916"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="113dp"
+            android:layout_height="89dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="27dp"
+            app:layout_constraintEnd_toStartOf="@+id/imageView24"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextText7"
+            app:srcCompat="@drawable/_94654_visa_icon" />
+
+        <ImageView
+            android:id="@+id/imageView24"
+            android:layout_width="113dp"
+            android:layout_height="101dp"
+            android:layout_marginTop="21dp"
+            android:layout_marginEnd="6dp"
+            app:layout_constraintEnd_toStartOf="@+id/imageView25"
+            app:layout_constraintStart_toEndOf="@+id/imageView4"
+            app:layout_constraintTop_toBottomOf="@+id/editTextText8"
+            app:srcCompat="@drawable/pngimg_com___mastercard_png23" />
+
+        <ImageView
+            android:id="@+id/imageView25"
+            android:layout_width="105dp"
+            android:layout_height="107dp"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginEnd="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageView24"
+            app:layout_constraintTop_toBottomOf="@+id/editTextText8"
+            app:srcCompat="@drawable/screenshot_2024_03_09_001208" />
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="234dp"
+            android:layout_height="66dp"
+            android:layout_marginStart="63dp"
+            android:layout_marginEnd="63dp"
+            android:layout_marginBottom="72dp"
+            android:text="Submit"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

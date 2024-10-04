@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Quick_Bite</string>
+    <string name="button_2">REGISTER</string>
+    <string name="name1">Enter Username</string>
+    <string name="username_2">Username</string>
+    <string name="pw1">Password</string>
+    <string name="login1">LOGIN</string>
+    <string name="or">OR</string>
+    <string name="card_no1">Card No :</string>
+    <string name="Month_date">MM/YY</string>
+    <string name="card_code">CVV</string>
+</resources>
